@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('get code from git') {
             steps {
-               checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'venkygit', url: 'https://github.com/veeravenkateswararao/onlinebookstoreJava.git']])
+checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitCRED', url: 'https://github.com/dileepkumar-dileep/onlinebookstoreJava.git']])
             }
         }
         stage('validate') {
